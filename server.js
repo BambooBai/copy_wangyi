@@ -89,7 +89,7 @@ let data = [{
 }
 ];
 app.use(static(__dirname));
-app.use(async (ctx, next) => {
+app.use(async function(ctx, next) {
     if (ctx.path == '/getData') {
         let name = ctx.query.name;
         let curData = data.filter(m => m.name == name);
