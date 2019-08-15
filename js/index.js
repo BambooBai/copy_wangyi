@@ -1,7 +1,7 @@
 /*
- * @Author: xuxueliang
+ * @Author: baijuan
  * @Date: 2019-08-15 11:22:15
- * @LastEditors: xuxueliang
+ * @LastEditors: baijuan
  * @LastEditTime: 2019-08-15 12:01:06
  */
 let home = {
@@ -31,6 +31,7 @@ let home = {
     this.navFixed()
     this.toggleBtnFn()
     this.tabChange()
+    this.myAjax('yaowen');
   },
   // 1. 点击用户头像显示登录界面
   loginIconShow () {
